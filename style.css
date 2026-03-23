@@ -1,0 +1,68 @@
+body {
+    background-color: #ffffff;
+}
+
+p {
+    color: #000000;
+    font-size: 22px;
+}
+h1{ 
+ color: rgb(0, 0, 0); 
+ text-align: center; 
+} 
+
+
+.viktigt { 
+color: rgb(38, 0, 255); 
+font-weight: bold; 
+}
+
+/*a:link { 
+color: rgb(255, 0, 0); 
+text-decoration: none;  
+} 
+
+*/
+
+{ color: red; 
+text-decoration: underline; 
+font-weight: bold; 
+} 
+
+a:active { 
+color: yellow; 
+}
+
+.knapp {
+  background-color: #4CAF50; 	/* Grön bakgrund */
+  color: white;              		/* Vit text */
+  padding: 10px 20px;        		/* Luft inuti knappen */
+  text-decoration: none;     		/* Inget understruket */
+  display: inline-block;     		/* Gör att padding och bredd funkar bra */
+  border-radius: 5px;		/* Rundade hörn */
+  transition: 0.3s;          		/* Gör färgbytet mjukt */
+}
+
+.knapp:hover {
+  background-color: #a04545; 	/* Lite mörkare grön vid hover */
+  transform: scale(1.1);		/* Knappen blir lite större */
+}
+
+ .knapp:active { 
+ background-color: darkblue;	/* Blir mörkare vid tryck */
+ transform: translateY(5px); 	/* "Sjunker" ner lite grann */ 
+}
+
+img {
+  max-width: 100%; 	/* Bilden blir aldrig bredare än sin behållare, tex en box */
+  height: auto;	 /* Behåller proportionerna så bilden inte ser "utsträckt" ut */
+}
+
+.profilbild { 
+width: 200px; 
+height: 200px; 
+border-radius: 50%; 	/* Gör bilden helt cirkulär */ 
+object-fit: cover; 	/* Centrerar och beskär bilden så den fyller cirkeln snyggt */
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);    /* Sidled, Höjdled, Suddighet, Färg */
+border: 4px solid white; 	/* Lade till en liten ram för tydlighet */
+}
