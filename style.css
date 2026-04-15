@@ -1,0 +1,197 @@
+
+/* Base Styles */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%; /* Bilden blir aldrig bredare än sin behållare */
+    height: auto; /* Behåller proportionerna så bilden inte ser utsträckt ut */
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 920px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.profile-container {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #01a801;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#intro {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+p {
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+}
+
+a {
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #01a801;
+    color: white;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Layout */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f0f0f0;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f0f0f0;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.knapp {
+    background: linear-gradient(45deg, #01a801, #008000); /* Gradient grön bakgrund */
+    color: white; /* Vit text */
+    padding: 12px 24px; /* Luft inuti knappen */
+    text-decoration: none; /* Inget understruket */
+    display: inline-block; /* Gör att padding och bredd funkar bra */
+    border-radius: 25px; /* Mer rundade hörn */
+    transition: all 0.3s ease; /* Gör färgbytet mjukt */
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Skugga */
+    border: none;
+    cursor: pointer;
+}
+
+.knapp:hover {
+    background: linear-gradient(45deg, #008000, #006400); /* Mörkare gradient vid hover */
+    transform: translateY(-4px); /* Knappen lyfter lite */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Starkare skugga */
+}
+
+.knapp:active {
+    background: linear-gradient(45deg, #004400, #002200); /* Ännu mörkare vid tryck */
+    transform: translateY(0px); /* Tillbaka till normal */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Mindre skugga */
+}
+
+/* Projects */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background: #01a801;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
